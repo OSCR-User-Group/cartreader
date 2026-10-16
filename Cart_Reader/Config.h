@@ -40,6 +40,14 @@
 
 /*==== HARDWARE MODULES ===========================================*/
 
+/* [ New OSCR Rotary Display -------------------------------------- ]
+    Enable this if you have the new OSCR branded rotary display.
+*/
+
+// #define ENABLE_ROTARY_NEW_OSCR
+
+/****/
+
 /* [ Automatic Voltage Selection ---------------------------------- ]
     Enable this if you have the VSELECT module.
 */
@@ -411,7 +419,7 @@ also needs ENABLE_FLASH8 and ENABLE_FLASH16 to be enabled
     Filename: config.txt
 */
 
-//#define ENABLE_CONFIG
+#define ENABLE_CONFIG
 
 /****/
 

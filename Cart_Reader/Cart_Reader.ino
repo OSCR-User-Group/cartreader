@@ -2159,6 +2159,9 @@ void setup() {
    * Set LED Pin PD7 to Output
    **/
   DDRD |= (1 << 7);
+    #ifdef ENABLE_ROTARY_NEW_OSCR
+      PORTG = (1 << 2);
+    #endif /* ENABLE_ROTARY_NEW_OSCR */
   #else /* !defined(ENABLE_ROTARY) */
   /**
    * VSELECT uses pin PD3 when ROTARY is NOT enabled (PD3 is NOT used)
